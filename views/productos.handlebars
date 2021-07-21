@@ -1,0 +1,21 @@
+
+<h3>mis productos</h3>
+
+<table class ="table" style="max-width: 500px" >
+    <thead>
+        <tr>
+            <th>nombre</th>
+            <th>precio</th>
+            <th>imagen</th>
+        </tr>
+    </thead>
+    <tbody>
+         {{#each productos }}
+        <tr>
+            <td>{{this.nombre}}</td>           
+            <td>{{this.precio}}</td>
+            <td><img src="{{this.imagen}}" alt=""></td>
+        </tr>
+     {{/each}}
+    </tbody>
+</table>
