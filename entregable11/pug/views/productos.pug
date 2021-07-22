@@ -1,0 +1,17 @@
+head
+  link#bootstrap-css(href='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css' rel='stylesheet')
+  script(src='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js')
+h3 LISTA ENTERA DE PRODUCTOS
+table.table(style='max-width: 500px; background-color: #595959; color: white; font-style: fantasy;')
+  thead
+    tr
+      th nombre
+      th precio
+      th imagen
+  tbody
+  each producto in lista
+    tr
+      td=  producto.nombre
+      td= producto.precio
+      td
+        img(src=producto.imagen  alt=producto.imagen style='max-width: 50px')
