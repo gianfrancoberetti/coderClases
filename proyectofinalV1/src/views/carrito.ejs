@@ -1,0 +1,26 @@
+<%- include('./layouts/head') %>
+<%- include('./layouts/nav') %>
+
+<% productos.forEach(function(producto) { %>
+<div class=" container d-inline">
+    
+    <div class="card " style="width: 18rem; min-width: 15rem;">
+      <img class="card-img-top" src=<%= producto.imagen %>>
+      <div class="card-body">
+        <h5 class="card-title" style="font-weight: bold;"><%= producto.nombre %></h5>
+        <p class="card-text">Descripcion: <%= producto.descripcion %></p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item" style="font-weight: bold;"> Precio: <%= producto.precio %></li>
+        <!-- <li class="list-group-item" style="font-weight: bold;"><%= producto.time %></li> -->
+        <li class="list-group-item" style="font-weight: bold;">Stock: <%= producto.cantidad %> unidades</li>
+      </ul>
+      <div class="card-body">
+        <a href="/carrito/agregar" class="card-link">Agregar al carrito</a>
+        <!-- <a href="#" class="card-link">Another link</a> -->
+      </div>
+  </div>
+  
+  
+</div>
+  <% }); %>

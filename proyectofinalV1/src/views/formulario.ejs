@@ -1,0 +1,29 @@
+<%- include('./layouts/head') %>
+<%- include('./layouts/nav') %>
+<div class="container" id="contenedor">
+  <div class="form-group">
+      <div class="form-group">
+          <div class="span text-center">
+              <h1 > Agregar productos </h1>
+              <form action="/productos/agregar" method="post" class="" style=" margin-top: 200px;">
+                  <div class="">
+                      <input id="nombre" name="nombre" type="text" class=" form-control" style="margin: 2px;" placeholder="nombre"> 
+                  </div>
+                  <div class="controls controls-row">
+                      <input id="precio" name="precio" type="text" class="form-control" style="margin: 2px;" placeholder="precio">
+                  </div>
+                  <div class="controls controls-row">
+                      <input id="imagen" name="imagen" type="text" class="form-control" style="margin: 2px;" placeholder="imagen">
+                  </div>
+                  <div>
+                      <textarea name="descripcion" id="descripcion" class="form-control" placeholder="Descripcion"></textarea>
+                  </div>
+                  <div class="controls">
+                      <button type="submit" class="btn btn-primary input-medium pull-right" id="button">Enviar</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+<div>
